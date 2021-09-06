@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="../styles/teamstyles.css">
+  </head>
+  <body>
+    <h1>{{title}}</h1>
+
+    <form action="/auth/logout" method="POST">
+    <button type="submit">Logout</button>
+    </form>
+
+    {{!-- <a href="/players">Home</a> --}}
+    <a href="/teams">See all teams</a>
+    <a href="/players/create">Create player</a>
+    
+    <ul>
+        {{#each players}}
+      <li>
+          <h4>
+              <a href="/players/{{_id}}">{{name}}</a>
+          </h4>
+        
+          <h3>Number:{{number}}</h3>
+          <h4>Team:{{team}}</h4>
+          <h5>All Star Game {{isAllStar}}</h5>
+          <form action="/players/delete/{{_id}}?_method=DELETE" method="POST">
+          <button type="submit">Delete Player</button></form>
+          <hr />
+        {{/each}}
+      </li>
+    </ul>
+
+  </body>
+</html>

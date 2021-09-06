@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Create Player</title>
+</head>
+<body>
+    <h1>Create Player</h1>
+    <a href="/">Home</a>
+    <a href="/players">Back to</a>
+    <form action="/players/create" method="POST" enctype="form-data">
+      <label>
+        <p>Name</p>
+        <input type="text" name="name" placeholder="name"/>
+      </label>
+
+      <label>
+        <p>Number</p>
+        <input type="number" name="number" placeholder="number"/>
+      </label>
+
+      <label for="create-player-team">
+        <p>Team</p>
+      </label>
+      <input id="create-player-team" type="text" name="team" placeholder="team"/>
+
+      <label>
+        <p>All Star Player</p>
+        <input type="checkbox" name="isAllStar"/>
+      </label>
+
+        <hr/>
+        <button type="submit">Send Player</button>
+
+
+</body>
+</html>

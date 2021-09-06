@@ -1,0 +1,14 @@
+@import "./background.css";
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+
+body{
+    font-family: 'Oranienbaum', serif;
+    color:white;
+}
+
+a{
+    font-family: 'Oranienbaum', serif;
+    color:white;
+    text-decoration: none;
+}
+

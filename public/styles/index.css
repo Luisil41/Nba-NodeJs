@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+@import "./background.css";
+
+
+body{
+    margin: 0 auto;
+    background-image: url('https://i.pinimg.com/originals/6c/50/40/6c504025f7d36fc22586ebfe6799e55c.jpg');
+    background-size: cover;
+    color:white;
+    font-family: 'Oranienbaum', serif;
+
+}
+
+a, button{
+    font-family: 'Oranienbaum', serif;
+    color:white;
+    font-size: 22px;
+    text-decoration: none;
+    background-color:transparent;
+    padding: 20px;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .typing-demo {
+    width: 20ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  .black-lives-matter {
+    font-size: 26px;
+    line-height: 8vw;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    background: url(https://raw.githubusercontent.com/s1mpson/-/master/codepen/black-lives-matter/victim-collage.png);
+    background-size: 40%;
+    background-position: 50% 50%;
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0.08);
+    animation: zoomout 10s ease 500ms forwards;
+  }
+  
+  @keyframes zoomout {
+    from {
+      background-size: 40%;
+    }
+    to {
+      background-size: 10%;
+    }
+  }

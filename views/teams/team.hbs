@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/teamstyles.css">
+    <title>Page of {{team.name}} </title>
+</head>
+<body>
+    <a href="/">Home</a>
+    <a href="/teams">Back to teams</a>
+
+        {{#if team}}
+
+        <h2>Page of {{team.name}}</h2>
+        <h5> 
+              {{#if team.image}}
+              <img src="{{team.image}}" width='150px' alt="team">
+          {{/if}}
+          </h5>
+          <h4>Players:{{team.players}}</h4>
+          
+
+          {{else}}
+          <h3>Team does not exists</h3>
+          {{/if}}
+    
+</body>
+</html>

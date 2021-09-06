@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/teamstyles.css">
+    
+    <title>{{title}}</title>
+</head>
+<body>
+  <h1>{{title}}</h1>
+     <a href="/">Home</a>
+     <a href="/players">Back to All Players</a>
+
+    <ul>
+        {{#each teams}}
+      <li>
+          <h4>
+              <a href="/teams/{{_id}}">{{name}}</a>
+          </h4>
+           {{#if image}}
+              <img src="{{image}}" width='150px' alt="team">
+          {{/if}}
+          <h3>State:{{state}}</h3>
+          <h4>Players:{{players}}</h4>
+          <hr />
+        {{/each}}
+      </li>
+    </ul>
+</body>
+</html>
